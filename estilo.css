@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiri&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #a6b4ac;
+  font-family: sans-serif; }
+
+.title {
+  text-align: center;
+  margin: 20px;
+  color: #fff; }
+
+.category {
+  margin: 20px auto;
+  text-align: center;
+  padding: 0.5rem;
+  background-color: #22965c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 30vh; }
+
+#quote {
+  font-size: 25px;
+  text-align: left; }
+
+.aspas {
+  font-size: 20px; }
+
+.container {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.content {
+  width: 500px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column; }
+
+footer {
+  color: #fff;
+  text-align: center;
+  font-style: italic; }
+
+.content .author {
+  display: flex;
+  font-size: 18px;
+  margin-top: 20px;
+  font-style: italic; }
+
+.buttons {
+  border-top: 1px solid #ccc; }
+
+.buttons .features {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: flex-end; }
+
+.features ul {
+  display: flex; }
+
+.features ul li {
+  margin: 0 5px;
+  height: 47px;
+  width: 47px;
+  display: flex;
+  cursor: pointer;
+  color: #22965c;
+  list-style: none;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #22965c;
+  transition: all 0.3s ease; }
+
+.features ul li:first-child {
+  margin-left: 0; }
+
+ul li:is(:hover, .active) {
+  color: #fff;
+  background: #22965c; }
+
+ul .speech.active {
+  pointer-events: none; }
+
+.buttons button {
+  border: none;
+  color: #fff;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 13px 22px;
+  border-radius: 30px;
+  background: #22965c; }
+
+.buttons button.loading {
+  opacity: 0.7;
+  pointer-events: none; }
+
+/*# sourceMappingURL=estilo.css.map */

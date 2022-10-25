@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: rgb(166, 180, 172);
+    --second-color: rgb(34, 150, 92);
+    --white-color: #fff;
+}
+
+body {
+    background-color:var(--primary-color);
+    font-family: sans-serif;
+}
+
+.title {
+    text-align: center;
+    margin: 20px;
+    color: var(--white-color);
+}
+
+.category {
+    margin: 20px auto;
+    text-align: center;
+    padding: 0.5rem;
+    background-color: var(--second-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 30vh;
+}
+
+#quote{
+    font-size: 25px;
+    text-align:left;
+}
+
+.aspas {
+    font-size: 20px;
+}
+
+.container {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.content {
+    width: 500px;
+    background-color: rgb(223, 223, 223);
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+}
+
+.content .author{
+    display: flex;
+    font-size: 18px;
+    margin-top: 20px;
+    font-style: italic;
+  }
+  .buttons{
+    border-top: 1px solid #ccc;
+  }
+  .buttons .features{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .features ul{
+    display: flex;
+  }
+  .features ul li{
+    margin: 0 5px;
+    height: 47px;
+    width: 47px;
+    display: flex;
+    cursor: pointer;
+    color: var(--second-color);
+    list-style: none;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--second-color);
+    transition: all 0.3s ease;
+  }
+  .features ul li:first-child{
+    margin-left: 0;
+  }
+  ul li:is(:hover, .active){
+    color: #fff;
+    background: var(--second-color);
+  }
+  ul .speech.active{
+    pointer-events: none;
+  }
+  .buttons button{
+    border: none;
+    color: #fff;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 13px 22px;
+    border-radius: 30px;
+    background: var(--second-color);
+  }
+  .buttons button.loading{
+    opacity: 0.7;
+    pointer-events: none;
+  }
