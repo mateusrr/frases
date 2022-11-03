@@ -1,10 +1,11 @@
 const quote = document.getElementById("quote");
 const author = document.querySelector(".name");
 const btn = document.querySelector("button");
-const twitterBtn = document.querySelector(".whatsapp");
+const whatsappBtn = document.querySelector(".whatsapp");
 
-const url = "https://mrr-apifrases.herokuapp.com/amor";
+const url = "https://mrr-apifrases.herokuapp.com/randoms";
 const url1 = "Acesse esse link para mais frases: " + "Em breve";
+
 btn.addEventListener("click", getQuote);
 
 function getQuote() {
@@ -16,10 +17,9 @@ function getQuote() {
     })
 };
 
-const pictures = getQuote();
-twitterBtn.addEventListener("click", ()=>{
-    let tweetUrl = `https://api.whatsapp.com/send?text=${quote.innerText} + ${url1}`;
-    window.open(tweetUrl,"_blank");
+whatsappBtn.addEventListener("click", () => {
+    let wppUrl = `https://api.whatsapp.com/send?text=${quote.innerText} + ${url1}`;
+    window.open(wppUrl,"_blank");
 });
 
 window.addEventListener("load", getQuote);
