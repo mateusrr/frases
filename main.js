@@ -4,7 +4,7 @@ const btn = document.querySelector("button");
 const whatsappBtn = document.querySelector(".whatsapp");
 
 const url = "https://mrr-apifrases.herokuapp.com/randoms";
-const url1 = "Acesse esse link para mais frases: " + "Em breve";
+const url1 = "Acesse esse link para mais frases: " + "https://mateusrr.github.io/frases/";
 
 btn.addEventListener("click", getQuote);
 
